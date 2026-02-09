@@ -10,7 +10,7 @@
 
 ## 🧩 功能特点 | Features
 
-- ✅ 支持多设备并行构建（K2P、R2100、MI-R3G 等）
+- ✅ 支持多设备并行构建（DIR-882、RM2100、NEWIFI3 等）
 - ✅ 支持定制默认 IP / WiFi / 管理账号等
 - ✅ 可选插件编译（如 Shadowsocks、Xray、SmartDNS 等）
 - ✅ 支持 MT7621 CPU 超频（最高至 1200MHz）
@@ -31,7 +31,7 @@
 | `cpufreq` | 启用 CPU 超频 | `true/false` |
 | `mt7621_oc` | 超频频率代码 | `1000Mhz=0x312 1100Mhz=0x362 1120Mhz=0x372 1200Mhz=0x3B2` |
 | `plugins` | 插件 JSON 配置 | `{"ss":"y","xray":"n"}` |
-| `customization` | 固件定制（默认 IP、密码等） | `{"lanip":"192.168.2.1"}` |
+| `customization` | 固件定制（默认 IP、密码等） | `{"lanip":"192.168.123.1"}` |
 | `nanoversion` | 是否构建精简版 | `false` |
 | `release` | 上传到 Release | `true` |
 | `oldreleases` | 删除旧 Release | `true` |
@@ -49,7 +49,7 @@
 命名格式如下：
 
 ```
-TurBoTse-K2P-4.4-mipsel-linux-musl-nano-cpufreq-0x362-20250520.trx
+TurBoTse-K2P-4.4-mipsel-linux-musl-nano-cpufreq-0x312-20250520.trx
 ```
 
 
@@ -73,12 +73,12 @@ TurBoTse-K2P-4.4-mipsel-linux-musl-nano-cpufreq-0x362-20250520.trx
 
 ```json
 {
-  "lanip": "192.168.2.1",
+  "lanip": "192.168.123.1",
   "signaccount": "admin",
   "signpassword": "admin",
-  "wifi2gssid": "Padavan",
+  "wifi2gssid": "PDCN",
   "wifi2gpsk": "1234567890",
-  "wifi5gssid": "Padavan-5G",
+  "wifi5gssid": "PDCN_5G",
   "wifi5gpsk": "1234567890"
 }
 ```
