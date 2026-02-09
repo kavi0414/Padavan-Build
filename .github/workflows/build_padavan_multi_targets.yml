@@ -9,7 +9,7 @@ on:
         description: "Comma-separated list of router devices (e.g., K2P,MI-R3G)"
         required: true
         type: string
-        default: DIR-882,RM2100,NEWIFI3
+        default: DIR-882,RM2100,NEWIFI
       toolchain:
         description: "Select compilation toolchain"
         required: true
